@@ -1,0 +1,87 @@
+:root {
+  /* Primary */
+  --color-primary-lightest: #e6f0ff;
+  --color-primary-light: #66afff;
+  --color-primary: #007aff;
+  --color-primary-dark: #005fcc;
+  --color-primary-darkest: #003f80;
+
+  /* Secondary */
+  --color-secondary-lightest: #e6ffe6;
+  --color-secondary-light: #a8ffa8;
+  --color-secondary: #6dff6d;
+  --color-secondary-dark: #32cc32;
+  --color-secondary-darkest: #1b661b;
+
+  /* Neutrals */
+  --color-text: #1e1e1e;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f5f7fa;
+
+  /* Dark mode */
+  --color-text-dark: #e5e5e5;
+  --color-text-muted-dark: #a1a1aa;
+  --color-bg-dark: #0e1116;
+  --color-bg-alt-dark: #1c1f26;
+  --color-primary-dark-mode: #3399ff;
+  --color-secondary-dark-mode: #7cff99;
+
+  /* Fonts */
+  --font-heading: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+html{font-size:16px}
+
+body{
+  margin:0; font-family:var(--font-body);
+  color:var(--color-text); background:var(--color-bg);
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+
+.container{max-width:960px;margin:0 auto;padding:24px}
+
+.site-header{display:flex;align-items:center;justify-content:center;padding:12px 0}
+
+.logo-wrap{display:flex;align-items:center;gap:12px;text-decoration:none}
+
+.logo-mark{height:56px;width:auto}
+
+.wordmark{font:600 1.75rem/1 var(--font-heading);letter-spacing:.2px}
+.wordmark .sintetiz{color:var(--color-primary)}
+.wordmark .ar{color:var(--color-secondary)}
+
+.hero-min{display:grid;place-items:center;text-align:center;padding:12vh 0 10vh;gap:14px}
+
+.tagline{font:700 clamp(1.8rem,4.5vw,3rem)/1.15 var(--font-heading);margin:0}
+.tagline strong{color:var(--color-primary)}
+
+.soon{
+  font-weight:700;
+  color:var(--color-bg);
+  background:var(--color-secondary);
+  border:none;
+  padding:.8rem 1.4rem;
+  border-radius:999px;
+  display:inline-block;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+  letter-spacing:.5px;
+  text-transform:uppercase;
+}
+
+.site-footer{margin-top:24px;text-align:center;color:var(--color-text-secondary);border-top:1px solid var(--color-border);padding:16px 0}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark){
+  body{color:var(--color-text-dark);background:var(--color-bg-dark)}
+  .wordmark .sintetiz{color:var(--color-primary-dark-mode)}
+  .wordmark .ar{color:var(--color-secondary-dark-mode)}
+  .soon{background:var(--color-secondary-dark-mode);color:var(--color-bg-dark)}
+  .site-footer{border-color:#2a2f3a}
+}
