@@ -1,38 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sintetiz.ar — Próximamente</title>
-  <meta name="description" content="Sintetiz.ar: convierte textos interminables en ideas claras y resumidas en segundos. Próximamente." />
-  <meta property="og:title" content="Sintetiz.ar — Próximamente" />
-  <meta property="og:description" content="Convierte textos interminables en ideas claras en segundos. Muy pronto." />
-  <meta property="og:type" content="website" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Hoja de estilos externa -->
-  <link rel="stylesheet" href="/styles.css" />
-</head>
-<body>
-  <div class="container">
-    <header class="site-header">
-      <a class="logo-wrap" href="/" aria-label="Inicio sintetiz.ar">
-        <img src="/logo.svg" alt="Logo sintetiz.ar" class="logo-mark" />
-        <span class="wordmark"><span class="sintetiz">sintetiz</span><span class="ar">ar</span></span>
-      </a>
-    </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sintetiz.ar — Próximamente</title>
+    <meta
+      name="description"
+      content="Sintetiz.ar: convierte textos interminables en ideas claras y resumidas en segundos. Próximamente."
+    />
+    <meta property="og:title" content="Sintetiz.ar — Próximamente" />
+    <meta
+      property="og:description"
+      content="Convierte textos interminables en ideas claras en segundos. Muy pronto."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" type="image/png" href="/favicon.png" />
+    <meta name="theme-color" content="#007AFF" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <a class="logo-wrap" href="/" aria-label="Inicio sintetiz.ar">
+          <img src="/logo.svg" alt="Logo sintetiz.ar" class="logo-mark" />
+          <span class="wordmark"
+            ><span class="sintetiz">sintetiz</span
+            ><span class="ar">ar</span></span
+          >
+        </a>
+      </header>
 
-    <main class="hero-min">
-      <h1 class="tagline">Convierte textos interminables en <strong>ideas claras</strong> en segundos.</h1>
-      <p class="soon">Próximamente</p>
-    </main>
+      <main class="hero-min">
+        <h1 class="tagline">
+          Convierte textos interminables en <strong>ideas claras</strong> en
+          segundos.
+        </h1>
+        <p class="soon">Próximamente</p>
+      </main>
 
-    <footer class="site-footer">
-      © <span id="year"></span> sintetiz.ar
-    </footer>
-  </div>
+      <footer class="site-footer">
+        <div class="footer-content">
+          © <span id="year"></span> sintetiz.ar — Hecho con foco en claridad ·
+          <a href="mailto:hola@sintetiz.ar">hola@sintetiz.ar</a>
+        </div>
+      </footer>
+    </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
